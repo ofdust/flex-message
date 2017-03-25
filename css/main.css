@@ -526,6 +526,23 @@ textarea {
 }
 
 /* line 1, ../scss/_base.scss */
+header {
+  margin-left: 30px;
+}
+/* line 3, ../scss/_base.scss */
+header h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 2.7em;
+  margin-bottom: 0px;
+}
+/* line 8, ../scss/_base.scss */
+header h2 {
+  margin-top: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+}
+
+/* line 15, ../scss/_base.scss */
 #container {
   display: flex;
   justify-content: space-around;
@@ -533,15 +550,25 @@ textarea {
   align-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  widows: 90%;
+  margin: 0 auto;
 }
 
-/* line 10, ../scss/_base.scss */
+/* line 26, ../scss/_base.scss */
 .quote {
   position: relative;
-  border: 1px solid black;
   max-width: 300px;
   padding: 10px;
   margin: 5px;
+}
+/* line 31, ../scss/_base.scss */
+.quote blockquote {
+  font-family: 'Lato', sans-serif;
+}
+/* line 34, ../scss/_base.scss */
+.quote cite {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5em;
 }
 
 /* ==========================================================================
