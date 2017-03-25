@@ -527,23 +527,26 @@ textarea {
 
 /* line 1, ../scss/_base.scss */
 header {
-  margin-left: 30px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d2d2d2;
 }
-/* line 3, ../scss/_base.scss */
+/* line 6, ../scss/_base.scss */
 header h1 {
   font-family: 'Satisfy', cursive;
   font-size: 2.7em;
   margin-bottom: 0px;
   color: #ff0066;
 }
-/* line 9, ../scss/_base.scss */
+/* line 12, ../scss/_base.scss */
 header h2 {
   margin-top: 0px;
   font-family: 'Lato', sans-serif;
   font-size: 1.2em;
 }
 
-/* line 16, ../scss/_base.scss */
+/* line 19, ../scss/_base.scss */
 #container {
   display: flex;
   justify-content: space-around;
@@ -551,35 +554,70 @@ header h2 {
   align-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  widows: 90%;
+  width: 90%;
   margin: 0 auto;
 }
 
-/* line 27, ../scss/_base.scss */
+/* line 30, ../scss/_base.scss */
 .quote {
   position: relative;
   max-width: 350px;
   padding: 10px;
   margin: 5px;
 }
-/* line 32, ../scss/_base.scss */
+/* line 35, ../scss/_base.scss */
 .quote .fa-quote-left {
   margin: 0;
   padding: 0;
 }
-/* line 36, ../scss/_base.scss */
+/* line 39, ../scss/_base.scss */
 .quote blockquote {
   font-family: 'Lato', sans-serif;
   margin-top: -5px;
   margin-left: 22px;
 }
-/* line 41, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 .quote cite {
   font-family: 'Satisfy', cursive;
   font-size: 1.5em;
   color: #ff0066;
 }
 
+/* line 51, ../scss/_base.scss */
+footer {
+  background-color: #d2d2d2;
+  margin: 0;
+  margin-bottom: -15px;
+}
+/* line 55, ../scss/_base.scss */
+footer p {
+  padding: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 858px) {
+  /* line 62, ../scss/_base.scss */
+  header {
+    width: 99%;
+    padding-left: 20px;
+  }
+
+  /* line 66, ../scss/_base.scss */
+  #container {
+    width: 99%;
+  }
+}
+@media only screen and (max-width: 736px) {
+  /* line 72, ../scss/_base.scss */
+  #container {
+    flex-direction: column;
+  }
+
+  /* line 75, ../scss/_base.scss */
+  .quote {
+    max-width: 90%;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
