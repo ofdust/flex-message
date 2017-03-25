@@ -534,15 +534,16 @@ header h1 {
   font-family: 'Satisfy', cursive;
   font-size: 2.7em;
   margin-bottom: 0px;
+  color: #ff0066;
 }
-/* line 8, ../scss/_base.scss */
+/* line 9, ../scss/_base.scss */
 header h2 {
   margin-top: 0px;
   font-family: 'Lato', sans-serif;
   font-size: 1.2em;
 }
 
-/* line 15, ../scss/_base.scss */
+/* line 16, ../scss/_base.scss */
 #container {
   display: flex;
   justify-content: space-around;
@@ -554,21 +555,29 @@ header h2 {
   margin: 0 auto;
 }
 
-/* line 26, ../scss/_base.scss */
+/* line 27, ../scss/_base.scss */
 .quote {
   position: relative;
-  max-width: 300px;
+  max-width: 350px;
   padding: 10px;
   margin: 5px;
 }
-/* line 31, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
+.quote .fa-quote-left {
+  margin: 0;
+  padding: 0;
+}
+/* line 36, ../scss/_base.scss */
 .quote blockquote {
   font-family: 'Lato', sans-serif;
+  margin-top: -5px;
+  margin-left: 22px;
 }
-/* line 34, ../scss/_base.scss */
+/* line 41, ../scss/_base.scss */
 .quote cite {
   font-family: 'Satisfy', cursive;
   font-size: 1.5em;
+  color: #ff0066;
 }
 
 /* ==========================================================================
